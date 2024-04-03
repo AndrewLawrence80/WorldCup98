@@ -1,5 +1,7 @@
 # WorldCup98 Dataset - Download and Processing
 
+A gentle instruction about how to use the WorldCup98 Dataset.
+
 > **Note**: It takes a long time to rebuild nginx log and transfer it into csv format. I provide proceeding results after step [Group Request by Minute](#group-request-by-minute) in the repo. Feel free to use them.
 
 ## Download the Dataset
@@ -64,6 +66,8 @@ Default output directory is `MergedLog`.
 > You can stick to merged data in `MergedLog` if you prefer to shuffle data by your self.
 
 ## Remove Anomalies
+
+> **Note:** This step use data ranging from `1998-06-09T00:00:00Z` to `1998-07-13T23:59:59Z` when the WorldCup98 event was held.
 
 Run `05_remove_anomaly.ipynb`, the `.ipynb` notebook will smooth the request number.
 The notebook find anomalies and smooth values as following:
