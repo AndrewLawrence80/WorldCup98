@@ -1,3 +1,8 @@
+# Tools to rebuild Nginx log
+ita_public_tools
+WorldCup
+RecreatedLog
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
